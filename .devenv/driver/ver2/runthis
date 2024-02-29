@@ -1,0 +1,4 @@
+sudo scp ch34x.ko /lib/modules/$(uname -r)/kernel/drivers/usb/serial
+sudo depmod
+echo "Please reboot your system."
+
