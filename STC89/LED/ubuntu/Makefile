@@ -6,7 +6,7 @@
 # Copyright: 
 
 AS = sdas8051 -o # using: $(AS) outf inf0 inf1 ...
-CC = sdcc -o
+CC = sdcc -I/mnt/hgfs/unisym/inc/c -o
 PREP = sdcpp
 
 MCU = /dev/ttyUSB0
@@ -17,14 +17,16 @@ IDN = stc89led
 OUT = $(DIR)/$(IDN).ihx
 HEX = $(DIR)/$(IDN).hex
 
-.PHONY: defa clean
+.PHONY: defa c lp clean
 
-defa: ledubt.c
-	$(CC) $(OUT) $(<)
+defa: c
 	packihx $(OUT) > $(HEX)
 	sudo $(FLS) $(HEX)
 
-listp:
+c: ledubt.c
+	@$(CC) $(OUT) $(<)
+
+lp: # list ports
 	ls /dev/tty*
 
 clean:

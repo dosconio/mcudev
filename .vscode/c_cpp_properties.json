@@ -3,8 +3,9 @@
         {
             "name": "Linux",
             "includePath": [
+                "/mnt/hgfs/unisym/inc/c",
                 "${workspaceFolder}/**",
-                "/usr/share/sdcc/include"
+                "/usr/share/sdcc/include",
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
