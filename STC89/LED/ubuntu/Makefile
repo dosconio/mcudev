@@ -24,7 +24,7 @@ defa: c
 	sudo $(FLS) $(HEX)
 
 c: ledubt.c
-	@$(CC) $(OUT) $(<)
+	@$(CC) $(OUT) $(<) -D_PORT_SPECIAL
 
 lp: # list ports
 	ls /dev/tty*

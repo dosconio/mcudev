@@ -14,32 +14,29 @@ MCU = /dev/ttyUSB0
 FLS = stcgal -P stc89 -p $(MCU)
 
 DIR = ~/_obj
-IDN = stc89lcd1602
+IDN = stc89led2
 OUT = $(DIR)/$(IDN).ihx
 HEX = $(DIR)/$(IDN).hex
 
-.PHONY: defa all main delay lcd lp clean
+.PHONY: defa all main delay port lp clean
 
-defa: main delay lcd
-	@$(CC) -o $(OUT) $(DIR)/$(IDN).rel $(DIR)/delay.rel $(DIR)/hd44780.rel $(DIR)/lcd1602.rel
+defa: main delay port
+	@$(CC) -o $(OUT) $(DIR)/$(IDN).rel $(DIR)/delay.rel $(DIR)/port.rel
 	@packihx $(OUT) > $(HEX)
 
 all: clean defa
 	@sudo $(FLS) $(HEX)
 
-main: lcd1602ubt.c
+main: led2ubt.c
 	@$(CC) -o $(DIR)/$(IDN).rel -c $(<)
 
 delay: $(ULIB)/asm/8051/delay11M.asm
 	@$(AS) -o $(DIR)/delay.rel $(<)
 	@$(AS) -l $(DIR)/delay.lst $(<)
 
-lcd: # 
-	@$(CC) -o $(DIR)/hd44780.rel -c $(ULIB)/c/driver/HD44780.c -D_HD44780_PORT_CMD=p2 \
-		-D_HD44780_PORT_DAT=p0 -D_IMPLEMENT_SDCC8051 \
-		-D_HD44780_PIN_RS=p2_6 -D_HD44780_PIN_RW=p2_5 -D_HD44780_PIN_EN=p2_7
-
-	@$(CC) -o $(DIR)/lcd1602.rel -c $(ULIB)/c/driver/device/LCD1602.c -D_IMPLEMENT_SDCC8051
+port: $(ULIB)/c/8051/port.c
+	@$(CC) -o $(DIR)/port.rel -c $(<)
+	
 
 lp: # list ports
 	ls /dev/tty*
