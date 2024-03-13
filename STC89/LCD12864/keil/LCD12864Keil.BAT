@@ -7,7 +7,7 @@ SET CPU_XTAL=0x016E3600
 "E:\software\Keil\C51\BIN\A51.EXE" @"..\..\..\..\SVGN\_obj\STARTUP._ia"
 "E:\software\Keil\C51\BIN\C51.EXE" @"..\..\..\..\SVGN\_obj\main.__i"
 "E:\software\Keil\C51\BIN\C51.EXE" @"..\..\..\..\SVGN\_obj\HD44780.__i"
-"E:\software\Keil\C51\BIN\C51.EXE" @"..\..\..\..\SVGN\_obj\delay11M.__i"
 "E:\software\Keil\C51\BIN\C51.EXE" @"..\..\..\..\SVGN\_obj\LCD12864.__i"
+"E:\software\Keil\C51\BIN\C51.EXE" @"..\..\..\..\SVGN\_obj\delay11M.__i"
 "E:\software\Keil\C51\BIN\BL51.EXE" @"..\..\..\..\SVGN\_obj\lcd12864keil.lnp"
 "E:\software\Keil\C51\BIN\OH51.EXE" "..\..\..\..\SVGN\_obj\lcd12864keil" 

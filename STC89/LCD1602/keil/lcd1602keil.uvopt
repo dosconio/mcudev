@@ -243,7 +243,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\SVGN\unisym\lib\c\8051\delay11M.c</PathWithFileName>
+      <PathWithFileName>..\..\..\..\SVGN\unisym\lib\c\processor\8051\delay11M.c</PathWithFileName>
       <FilenameWithoutPath>delay11M.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>

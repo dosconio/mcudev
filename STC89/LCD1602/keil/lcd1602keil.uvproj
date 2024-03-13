@@ -486,7 +486,7 @@
             <File>
               <FileName>delay11M.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\..\..\..\SVGN\unisym\lib\c\8051\delay11M.c</FilePath>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\c\processor\8051\delay11M.c</FilePath>
             </File>
           </Files>
         </Group>
