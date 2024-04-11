@@ -7,9 +7,9 @@ using namespace uni;
 #define GPIOB_LED_B 1
 
 static void light_set(unsigned led_id, bool lighton = true) {
-	GPIO['B'][led_id].setMode(GPIOMode::OUT_PushPull);// 推挽输出
-	GPIO['B'][led_id].setSpeedM(2);// 2MHz
-	GPIO['B'][led_id] = !lighton;// 低电平
+	uni::GPIO_Pin &LED = GPIO['B'][led_id];
+	LED.setMode(GPIOMode::OUT_PushPull);// 默认 2MHz
+	LED = !lighton;// 负逻辑LED
 }
 
 void LED_Light(bool red, bool green, bool blue)

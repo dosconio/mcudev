@@ -3,6 +3,6 @@
 #include "./led.h"
 
 int main() {
-	LED_Light(false, true, true);
+	LED_Light(true, true, false);
 	while (true);
 }
