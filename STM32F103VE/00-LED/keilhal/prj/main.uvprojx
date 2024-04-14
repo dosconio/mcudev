@@ -331,7 +331,7 @@
             <uGnu>1</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
-            <v6LangP>5</v6LangP>
+            <v6LangP>1</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
@@ -341,7 +341,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F103xE, _MCU_STM32F103VE</Define>
               <Undefine></Undefine>
-              <IncludePath>E:\tmp\STM32Cube_FW_F1_V1.6.0\Drivers\CMSIS\Device\ST\STM32F1xx\Include;E:\tmp\STM32Cube_FW_F1_V1.6.0\Drivers\CMSIS\Include;..\..\..\..\SVGN\unisym\inc\c;..\..\..\..\SVGN\unisym\inc\cpp;..\..\cominc</IncludePath>
+              <IncludePath>..\..\..\..\..\SVGN\unisym\inc\c;..\..\..\..\..\SVGN\unisym\inc\cpp;..\..\..\..\LibSTM32CubeMX\CMSIS\Include;..\..\..\..\LibSTM32CubeMX\STM32F1xx_HAL_Driver\Inc;..\..\..\..\LibSTM32CubeMX\INC_HER;..\..\..\..\LibSTM32CubeMX\CMSIS\Device\ST\STM32F1xx\Include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -393,32 +393,52 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>Library Standard</GroupName>
+          <Files>
+            <File>
+              <FileName>startup_stm32f103xe.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\..\..\..\herlib\mcu\starts\startup_stm32f103xe.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>HALs</GroupName>
+          <Files>
+            <File>
+              <FileName>stm32f1xx_hal_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\LibSTM32CubeMX\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f1xx_hal.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\LibSTM32CubeMX\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f1xx_hal_cortex.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\LibSTM32CubeMX\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>CMSIS</GroupName>
+          <Files>
+            <File>
+              <FileName>system_stm32f1xx.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\..\LibSTM32CubeMX\CMSIS\Device\ST\STM32F1xx\Source\Templates\system_stm32f1xx.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>Library Unisym</GroupName>
           <Files>
             <File>
               <FileName>GPIO.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\GPIO.cpp</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Library Standard</GroupName>
-          <Files>
-            <File>
-              <FileName>system_stm32f1xx.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\ST\system_stm32f1xx.c</FilePath>
-            </File>
-            <File>
-              <FileName>startup_stm32f103xe.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\ST\arm\startup_stm32f103xe.s</FilePath>
-            </File>
-            <File>
-              <FileName>led.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\..\comlib\led.cpp</FilePath>
+              <FilePath>..\..\..\..\..\SVGN\unisym\lib\cpp\Device\GPIO.cpp</FilePath>
             </File>
           </Files>
         </Group>
