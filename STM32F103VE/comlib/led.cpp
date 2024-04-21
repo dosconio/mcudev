@@ -13,6 +13,7 @@ static void light_set(unsigned led_id, bool lighton = true) {
 //
 
 void LED_Initialize() {
+	GPIO['B'].enClock();
 	light_set(GPIOB_LED_R, false);
 	light_set(GPIOB_LED_G, false);
 	light_set(GPIOB_LED_B, false);

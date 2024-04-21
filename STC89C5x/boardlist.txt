@@ -1,0 +1,4 @@
+Board Option:
+- 普中2
+
+暂不使用 Macro-options

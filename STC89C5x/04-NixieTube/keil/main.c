@@ -5,8 +5,11 @@
 
 void main()
 {
-	// 20240305: cannot make true for:
-	// 20240413: 原来是笔者把并口 LCD12864 装反了
+	
+	// un-finished
+	
+	
+	
 	LCD12864_Initialize();
 	LCD12864_Clear();
 	LCD12864_CursorSet(1, 0);// (COL,ROW)

@@ -1,0 +1,4 @@
+Board Option:
+- Embedfire.指南者.STM32F103VET 
+
+暂不使用 Macro-options（即通过宏控制是哪类板子，目前没有一芯多板的需求）

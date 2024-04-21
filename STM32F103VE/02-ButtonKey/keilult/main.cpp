@@ -1,33 +1,23 @@
 // ARMCC-5 GB2312 @dosconio
-#include <stm32f1xx_hal.h>//{TODO} independent from HAL
-#include "MCU/ST/STM32F103VEx"
-#include "./led.h"
-
-using namespace uni;
-
-extern "C" void SystemClock_Config(void);
+#include "main.h"
 
 int main() {
-	LED_Initialize();
 	SystemClock_Config();
 
+	LED_Initialize();
+	KEY_Initialize();
+	
 	GPIO_Pin& RLED = LED_RED_REF(),
 		& GLED = LED_GREEN_REF(),
 		& BLED = LED_BLUE_REF();
+	RLED = false;
 	while (true) {
-		RLED.Toggle();
-		HAL_Delay(333);
-		RLED.Toggle();
-		GLED.Toggle();
-		HAL_Delay(333);
-		GLED.Toggle();
-		BLED.Toggle();
-		HAL_Delay(333);
-		BLED.Toggle();
+		if (KEY_Scanwait(KEY_1_REF()))
+			RLED.Toggle();
+		if (KEY_Scanwait(KEY_2_REF()))
+			GLED.Toggle();
 	}
 }
-
-#include <cinc>
 
 void SystemClock_Config(void)
 {
@@ -42,11 +32,8 @@ void SystemClock_Config(void)
 	HAL_InitTick(uwTickPrio);// include HAL_InitTick(TICK_INT_PRIORITY); // parial of HAL_Init();
 }
 
-void SysTick_Handler(void)
-{
+#include <cinc>
+void SysTick_Handler(void) {
 	HAL_IncTick();
 }
-
-
-
 #include <cinc>

@@ -54,7 +54,7 @@
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
-          <DebugInformation>0</DebugInformation>
+          <DebugInformation>1</DebugInformation>
           <BrowseInformation>1</BrowseInformation>
           <ListingPath>..\..\..\..\SVGN\_obj\_lst\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
@@ -315,7 +315,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>2</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -400,6 +400,11 @@
               <FileType>8</FileType>
               <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\GPIO.cpp</FilePath>
             </File>
+            <File>
+              <FileName>RCC.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\RCC.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -421,11 +426,6 @@
               <FilePath>..\..\..\LibSTM32CubeMX\CMSIS\Device\ST\STM32F1xx\Source\Templates\system_stm32f1xx.c</FilePath>
             </File>
             <File>
-              <FileName>startup_stm32f103xe.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>..\..\..\..\herlib\mcu\starts\startup_stm32f103xe.s</FilePath>
-            </File>
-            <File>
               <FileName>stm32f1xx_hal.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\LibSTM32CubeMX\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c</FilePath>
@@ -444,6 +444,11 @@
               <FileName>stm32f1xx_hal_gpio.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\LibSTM32CubeMX\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>startup_stm32f103xe.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>..\..\..\LibStarter\startup_stm32f103xe.s</FilePath>
             </File>
           </Files>
         </Group>

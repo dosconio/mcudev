@@ -1,5 +1,5 @@
 #define _IMPLEMENT_KEIL8051
-#include <MCU/8051/keil8051.h>
+#include <MCU/Intel/keil8051.h>
 #include <MCU/delay.h>
 #include <driver/LCD1602.h>
 #include "intrins.h"

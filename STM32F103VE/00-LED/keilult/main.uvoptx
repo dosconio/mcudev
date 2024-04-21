@@ -230,12 +230,12 @@
     <File>
       <GroupNumber>3</GroupNumber>
       <FileNumber>3</FileNumber>
-      <FileType>1</FileType>
+      <FileType>8</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\ST\system_stm32f1xx.c</PathWithFileName>
-      <FilenameWithoutPath>system_stm32f1xx.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\comlib\led.cpp</PathWithFileName>
+      <FilenameWithoutPath>led.cpp</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -246,7 +246,7 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\ST\arm\startup_stm32f103xe.s</PathWithFileName>
+      <PathWithFileName>..\..\..\LibStarter\startup_stm32f103xe.s</PathWithFileName>
       <FilenameWithoutPath>startup_stm32f103xe.s</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
@@ -254,12 +254,12 @@
     <File>
       <GroupNumber>3</GroupNumber>
       <FileNumber>5</FileNumber>
-      <FileType>8</FileType>
+      <FileType>1</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\comlib\led.cpp</PathWithFileName>
-      <FilenameWithoutPath>led.cpp</FilenameWithoutPath>
+      <PathWithFileName>..\..\..\LibSTM32CubeMX\CMSIS\Device\ST\STM32F1xx\Source\Templates\system_stm32f1xx.c</PathWithFileName>
+      <FilenameWithoutPath>system_stm32f1xx.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

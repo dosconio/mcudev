@@ -1,5 +1,5 @@
 
-#include <MCU/8051/sdcc8051.h> // #include <mcs51/8051.h>
+#include <MCU/Intel/sdcc8051.h> // #include <mcs51/8051.h>
 #include <MCU/delay.h>
 #include <MCU/port.h>
 
