@@ -1,0 +1,15 @@
+{
+  "name": "UCLM_Arduino",
+  "keywords": "Arduino, UCLM, MCU",
+  "description": "UCLM Arduino Support",
+  "repository":
+  {
+    "type": "community",
+    "url": "https://movink.cn"
+  },
+  "frameworks": "arduino",
+  "platforms":
+  [
+    "atmelavr"
+  ]
+}

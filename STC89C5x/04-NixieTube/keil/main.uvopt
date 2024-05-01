@@ -28,7 +28,7 @@
     <TargetOption>
       <CLK51>24000000</CLK51>
       <OPTTT>
-        <gFlags>0</gFlags>
+        <gFlags>1</gFlags>
         <BeepAtEnd>1</BeepAtEnd>
         <RunSim>1</RunSim>
         <RunTarget>0</RunTarget>
@@ -207,8 +207,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\SVGN\unisym\lib\c\driver\HD44780.c</PathWithFileName>
-      <FilenameWithoutPath>HD44780.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\..\..\SVGN\unisym\lib\c\processor\8051\delay11M.c</PathWithFileName>
+      <FilenameWithoutPath>delay11M.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -219,20 +219,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\SVGN\unisym\lib\c\driver\device\LCD12864.c</PathWithFileName>
-      <FilenameWithoutPath>LCD12864.c</FilenameWithoutPath>
-      <RteFlg>0</RteFlg>
-      <bShared>0</bShared>
-    </File>
-    <File>
-      <GroupNumber>2</GroupNumber>
-      <FileNumber>5</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>0</tvExp>
-      <tvExpOptDlg>0</tvExpOptDlg>
-      <bDave2>0</bDave2>
-      <PathWithFileName>..\..\..\..\SVGN\unisym\lib\c\processor\8051\delay11M.c</PathWithFileName>
-      <FilenameWithoutPath>delay11M.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\..\..\SVGN\unisym\lib\c\driver\device\nixietube\nixietube.c</PathWithFileName>
+      <FilenameWithoutPath>nixietube.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
