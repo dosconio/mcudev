@@ -54,7 +54,7 @@
           <CreateExecutable>1</CreateExecutable>
           <CreateLib>0</CreateLib>
           <CreateHexFile>1</CreateHexFile>
-          <DebugInformation>0</DebugInformation>
+          <DebugInformation>1</DebugInformation>
           <BrowseInformation>0</BrowseInformation>
           <ListingPath>..\..\..\..\SVGN\_obj\_lst\</ListingPath>
           <HexFormatSelection>1</HexFormatSelection>
@@ -139,7 +139,7 @@
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -339,7 +339,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>STM32F407xx, _MCU_STM32F407VE</Define>
+              <Define>STM32F407xx, _MCU_STM32F407ZE</Define>
               <Undefine></Undefine>
               <IncludePath>..\..\..\..\..\SVGN\unisym\inc\c;..\..\..\..\..\SVGN\unisym\inc\cpp;..\..\..\..\LibSTM32CubeMX\CMSIS\Include;..\..\..\..\LibSTM32CubeMX\CMSIS\Device\ST\STM32F4xx\Include;..\..\..\..\LibSTM32CubeMX\STM32F4xx_HAL_Driver\Inc</IncludePath>
             </VariousControls>

@@ -8,8 +8,9 @@ int main(void)
 	GPIO_SetBits(GPIOB, GPIO_Pin_0);
 	while(1)
 	{
-		delay_ms(100);
-		GPIO_WriteBit(GPIOB, GPIO_Pin_0, GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0));
+		delay_ms(500);
+		if (!GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0)); else 
+			GPIO_WriteBit(GPIOB, GPIO_Pin_0, !GPIO_ReadInputDataBit(GPIOB, GPIO_Pin_0));
 	}
 }
 

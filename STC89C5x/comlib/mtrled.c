@@ -1,11 +1,19 @@
-#include <REGX51.H>
-#include "../norm.h"
-#include "../mtrled.h"
+#include <MCU/Intel/keil8051.h>
+#include "mtrled.h"
+#include <MCU/delay.h>
 
-#define PORT_MtrLED P0
-sbit RCK = P3 ^ 5;// RCLK
-sbit SCK = P3 ^ 6;// SRCLK
-sbit SER = P3 ^ 4;// SER
+#define PORT_MtrLED p0
+sbit RCK = p3 ^ 5;// RCLK
+sbit SCK = p3 ^ 6;// SRCLK
+sbit SER = p3 ^ 4;// SER
+
+static void delay(unsigned s)
+{
+	int i = 0;
+	s*=1000;
+	for(;i<s;i++)
+		delay010us();
+}
 
 static void Chip74HC595WriteByte(unsigned char Byte)
 {
@@ -30,7 +38,7 @@ void MtrLEDSetCol(unsigned char col, unsigned char byt)
 {
 	Chip74HC595WriteByte(byt);// data is a keyword
 	PORT_MtrLED = ~(0x80 >> col);
-	delay(1);
-	PORT_MtrLED = 0xFF;
+	//delay(1);
+	//PORT_MtrLED = 0xFF;
 }
 
