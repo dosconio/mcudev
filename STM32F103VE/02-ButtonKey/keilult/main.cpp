@@ -1,5 +1,6 @@
 // ARMCC-5 GB2312 @dosconio
 #include "main.h"
+#include "Device/SysTick"
 
 int main() {
 	SystemClock_Config();
@@ -27,13 +28,8 @@ void SystemClock_Config(void)
 		RCC.setFlash(true) && RCC.APB1.setMode(1) && RCC.APB2.setMode(0)   );
 	else while (true);
 	// Update the SystemCoreClock global variable
-	SystemCoreClock = HAL_RCC_GetSysClockFreq() >>
+	SystemCoreClock = HAL_RCC_GetSysClockFreq() >> //{TODO}
 		AHBPrescTable[(RCC.Cfgreg & RCC_CFGR_HPRE) >> RCC_CFGR_HPRE_Pos];
-	HAL_InitTick(uwTickPrio);// include HAL_InitTick(TICK_INT_PRIORITY); // parial of HAL_Init();
+	SysTick::enClock(SystemCoreClock, 1000);// T = 1ms //{TODO} Auto get `SystemCoreClock`
 }
 
-#include <cinc>
-void SysTick_Handler(void) {
-	HAL_IncTick();
-}
-#include <cinc>

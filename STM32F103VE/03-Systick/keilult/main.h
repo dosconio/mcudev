@@ -4,8 +4,4 @@
 
 using namespace uni;
 
-extern "C" {
-	void SysDelay(stduint ms);
-}
-
 void SystemClock_Config(void);

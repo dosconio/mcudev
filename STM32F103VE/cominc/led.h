@@ -20,4 +20,9 @@ uni::GPIO_Pin& LED_GREEN_REF();
 
 uni::GPIO_Pin& LED_BLUE_REF();
 
+static uni::GPIO_Pin
+	& RLED = LED_RED_REF(),
+	& GLED = LED_GREEN_REF(),
+	& BLED = LED_BLUE_REF();
+
 #endif

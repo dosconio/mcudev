@@ -315,7 +315,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>2</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -419,6 +419,21 @@
               <FileName>NVIC.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\NVIC.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>AFIO.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\AFIO.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>interrupt_tab.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\Interrupt\interrupt_tab.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>interrupt.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\interrupt.cpp</FilePath>
             </File>
           </Files>
         </Group>

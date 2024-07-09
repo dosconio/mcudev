@@ -425,6 +425,16 @@
               <FileType>8</FileType>
               <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\interrupt.cpp</FilePath>
             </File>
+            <File>
+              <FileName>AFIO.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\AFIO.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>interrupt_tab.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\Interrupt\interrupt_tab.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -439,6 +449,11 @@
               <FileName>key.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>..\..\comlib\key.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>system.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\comlib\system.cpp</FilePath>
             </File>
           </Files>
         </Group>

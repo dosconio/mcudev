@@ -405,6 +405,31 @@
               <FileType>8</FileType>
               <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\RCC.cpp</FilePath>
             </File>
+            <File>
+              <FileName>SysTick.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\SysTick.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>AFIO.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\AFIO.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>NVIC.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\NVIC.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>interrupt.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\interrupt.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>interrupt_tab.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\Interrupt\interrupt_tab.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

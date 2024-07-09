@@ -31,13 +31,3 @@ void SystemClock_Config(void)
 	SysTick::enClock(SystemCoreClock, 1000);// T = 1ms //{TODO} Auto get `SystemCoreClock`
 }
 
-#include <cinc>
-volatile stduint delay_count = 0;
-void SysTick_Handler(void) {
-	delay_count && delay_count--;
-}
-void SysDelay(stduint ms) {
-	delay_count = ms; 
-	while(delay_count);// must add `volatile`
-}
-#include <cinc>

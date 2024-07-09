@@ -3,7 +3,10 @@
 *.竺殇春野
 *.dbgconf
 _obj
-*TODO
+*TODO*
 .vs
 RTE
 他人资料
+*.scvd
+.jpg
+.png
