@@ -71,11 +71,11 @@
 /*信息输出*/
 #define XPT2046_DEBUG_ON         0
 
-#define XPT2046_INFO(fmt,arg...)           printf("<<-XPT2046-INFO->> "fmt"\n",##arg)
-#define XPT2046_ERROR(fmt,arg...)          printf("<<-XPT2046-ERROR->> "fmt"\n",##arg)
+#define XPT2046_INFO(fmt,arg...)           printf("<<-XPT2046-INFO->> " fmt "\n",##arg)
+#define XPT2046_ERROR(fmt,arg...)          printf("<<-XPT2046-ERROR->> " fmt "\n",##arg)
 #define XPT2046_DEBUG(fmt,arg...)          do{\
                                           if(XPT2046_DEBUG_ON)\
-                                          printf("<<-XPT2046-DEBUG->> [%d]"fmt"\n",__LINE__, ##arg);\
+                                          printf("<<-XPT2046-DEBUG->> [%d]" fmt "\n",__LINE__, ##arg);\
                                           }while(0)
 
 /******************************* 声明 XPT2046 相关的数据类型 ***************************/

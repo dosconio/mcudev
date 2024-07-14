@@ -161,7 +161,7 @@ int main() {
 	KEY_Initialize();
 	LCD_Initialize();
 	RTC_Initialize();
-	MQ135_Initialize();
+	//MQ135_Initialize(); 暂停
 	BEEP.setMode(GPIOMode::OUT_PushPull); BEEP = false;
 	DEBUG_USART_Config(); Usart_SendString((uint8_t *)"多功能桌上电子时钟 @dosconio\n");
 	
@@ -237,12 +237,6 @@ void USART1_IRQHandler(void)
 		ch=( uint16_t)READ_REG(UartHandle.Instance->DR);
 		WRITE_REG(UartHandle.Instance->DR,ch + 1); 
 	}
-}
-
-void ADC1_IRQHandler(void)
-{
-	extern ADC_HandleTypeDef hadc1;
-	HAL_ADC_IRQHandler(&hadc1);
 }
 
 #include <cinc>

@@ -455,6 +455,21 @@
               <FileType>8</FileType>
               <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\interrupt.cpp</FilePath>
             </File>
+            <File>
+              <FileName>TIM.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\TIM.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>ADC.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\ADC.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>DMA.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\SVGN\unisym\lib\cpp\Device\DMA.cpp</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

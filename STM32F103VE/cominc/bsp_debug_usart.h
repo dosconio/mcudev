@@ -27,7 +27,7 @@
 #define DEBUG_USART_IRQ                 		    USART1_IRQn
 /************************************************************/
 
-void Usart_SendString(uint8_t *str);
+void Usart_SendString(const char *str);
 void DEBUG_USART_Config(void);
 //int fputc(int ch, FILE *f);
 //int fgetc(FILE *f);

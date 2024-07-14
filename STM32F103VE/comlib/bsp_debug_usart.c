@@ -71,7 +71,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 
 
 /*****************  ·¢ËÍ×Ö·û´® **********************/
-void Usart_SendString(uint8_t *str)
+void Usart_SendString(const char *str)
 {
 	unsigned int k=0;
   do 
