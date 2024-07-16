@@ -8,6 +8,7 @@
 #include "Device/TIM"
 #include "Device/ADC"
 #include "Device/DMA"
+#include "Device/DAC"
 
 void Clock_Initialize();
 	
