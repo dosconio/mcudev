@@ -401,7 +401,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\keilult\palette.h</Filename>
+          <Filename>E:\PROJ\mcudev\STM32F103VE\0n-LCD-ILI9341-XPT2046-3.2inch\keilult\palette.h</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -417,7 +417,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\keilult\palette.h</Filename>
+          <Filename>E:\PROJ\mcudev\STM32F103VE\0n-LCD-ILI9341-XPT2046-3.2inch\keilult\palette.h</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -433,7 +433,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>0</BreakIfRCount>
-          <Filename>..\keilult\palette.h</Filename>
+          <Filename>E:\PROJ\mcudev\STM32F103VE\0n-LCD-ILI9341-XPT2046-3.2inch\keilult\palette.h</Filename>
           <ExecCommand></ExecCommand>
           <Expression></Expression>
         </Bp>
@@ -1021,20 +1021,20 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\comlib\bsp_ili9341_lcd.c</PathWithFileName>
-      <FilenameWithoutPath>bsp_ili9341_lcd.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\comlib\bsp_spi_flash.c</PathWithFileName>
+      <FilenameWithoutPath>bsp_spi_flash.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
       <FileNumber>42</FileNumber>
-      <FileType>1</FileType>
+      <FileType>8</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\comlib\bsp_spi_flash.c</PathWithFileName>
-      <FilenameWithoutPath>bsp_spi_flash.c</FilenameWithoutPath>
+      <PathWithFileName>..\..\comlib\bsp_xpt2046_lcd.cpp</PathWithFileName>
+      <FilenameWithoutPath>bsp_xpt2046_lcd.cpp</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
@@ -1045,8 +1045,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>..\..\comlib\bsp_xpt2046_lcd.cpp</PathWithFileName>
-      <FilenameWithoutPath>bsp_xpt2046_lcd.cpp</FilenameWithoutPath>
+      <PathWithFileName>..\..\comlib\bsp_ili9341_lcd.cpp</PathWithFileName>
+      <FilenameWithoutPath>bsp_ili9341_lcd.cpp</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

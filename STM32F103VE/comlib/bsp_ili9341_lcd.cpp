@@ -1,5 +1,6 @@
+extern "C" {
 #include "bsp_ili9341_lcd.h"
-
+}
 sFONT Font8x16 = {
   _FONTDAT_ASCII8x16_Table, 
   8, /* Width */
@@ -102,42 +103,16 @@ static void ILI9341_Delay ( __IO uint32_t nCount )
   * @param  无
   * @retval 无
   */
+static void tmpa();
 static void ILI9341_GPIO_Config ( void )
 {
-	GPIO_InitTypeDef GPIO_Initure;
-  
-      /* Enable GPIOs clock */
-  __HAL_RCC_GPIOD_CLK_ENABLE();
-  __HAL_RCC_GPIOE_CLK_ENABLE();
   __HAL_RCC_GPIOF_CLK_ENABLE();
   __HAL_RCC_GPIOG_CLK_ENABLE();
   __HAL_RCC_FSMC_CLK_ENABLE();			//使能FSMC时钟
   
-    /* Common GPIO configuration */
-  GPIO_Initure.Mode      = GPIO_MODE_OUTPUT_PP;  //推挽输出
-  GPIO_Initure.Pull      = GPIO_PULLUP;
-  GPIO_Initure.Speed     = GPIO_SPEED_FREQ_HIGH;
 
   
-  GPIO_Initure.Pin=GPIO_PIN_12;
-	HAL_GPIO_Init(GPIOD,&GPIO_Initure);
-  
-  //初始化复位引脚G11
-	GPIO_Initure.Pin=GPIO_PIN_1;
-	HAL_GPIO_Init(GPIOE,&GPIO_Initure);
-  
-  GPIO_Initure.Mode=GPIO_MODE_AF_PP; 
-//  GPIO_Initure.Alternate=GPIO_AF12_FSMC;	//复用为FSMC
-  
-	//初始化PD0,1,4,5,8,9,10,14,15
-	GPIO_Initure.Pin=GPIO_PIN_0|GPIO_PIN_1|GPIO_PIN_4|GPIO_PIN_5|GPIO_PIN_7|GPIO_PIN_8|\
-					         GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11|GPIO_PIN_14|GPIO_PIN_15; 
-  HAL_GPIO_Init(GPIOD, &GPIO_Initure);
-  
-  	//初始化PE2,7,8,9,10,11,12,13,14,15
-	GPIO_Initure.Pin=  GPIO_PIN_7|GPIO_PIN_8|GPIO_PIN_9|GPIO_PIN_10|GPIO_PIN_11|\
-                     GPIO_PIN_12|GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15;
-	HAL_GPIO_Init(GPIOE,&GPIO_Initure);
+  tmpa();
 	
 
 }
@@ -1147,7 +1122,23 @@ void LCD_ClearLine(uint16_t Line)
   ILI9341_Clear(0,Line,LCD_X_LENGTH,((sFONT *)LCD_GetFont())->Height);	/* 清屏，显示全黑 */
 
 }
-/*********************end of file*************************/
 
+#include "Device/GPIO"
+static void tmpa()
+{
+	using namespace uni;
+	
+	GPIOD[12].setMode(GPIOMode::OUT_PushPull); GPIOD[12].setPull(true);
+	GPIOE[1].setMode(GPIOMode::OUT_PushPull); GPIOD[12].setPull(true);
+	
+	GPIO_Pin fsmc_pins[] = {
+		GPIOD[0], GPIOD[1], GPIOD[4], GPIOD[5], GPIOD[7], GPIOD[8],
+		GPIOD[9], GPIOD[10], GPIOD[11], GPIOD[14], GPIOD[15],
+		GPIOE[7], GPIOE[8], GPIOE[9], GPIOE[10], GPIOE[11],
+		GPIOE[12], GPIOE[13], GPIOE[14], GPIOE[15]
+	}; 
+	for0a(i, fsmc_pins) fsmc_pins[i].setMode(GPIOMode::OUT_AF_PushPull);
+
+}
 
 
