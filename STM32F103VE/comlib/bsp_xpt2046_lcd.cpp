@@ -27,7 +27,7 @@ extern "C" {
 #include "led.h"
 using namespace uni;
 bool pressed = false;
-DisplayPoint CrtPoint;
+Point CrtPoint;
 
 
 
@@ -442,8 +442,8 @@ static uint8_t XPT2046_Calculate_CalibrationFactor ( strType_XPT2046_Coordinate 
   */
 static void ILI9341_DrawCross ( uint16_t usX, uint16_t usY )
 {
-	LCD.DrawLine(DisplayPoint(usX-10,usY) , DisplaySize(20,0));
-	LCD.DrawLine(DisplayPoint(usX,usY-10) , DisplaySize(0,20));
+	LCD.DrawLine(Point(usX-10,usY) , DisplaySize(20,0));
+	LCD.DrawLine(Point(usX,usY-10) , DisplaySize(0,20));
 }
 
 
@@ -472,7 +472,7 @@ uint8_t XPT2046_Touch_Calibrate ( uint8_t LCD_Mode )
 	  strType_XPT2046_Calibration CalibrationFactor;
     		
 		LCD_SetFont(&Font8x16);
-		LCD_SetColors(BLUE,BLACK);
+	//{}	LCD_SetColors(BLUE,BLACK);
 	
 		//…Ë÷√…®√Ë∑ΩœÚ£¨∫·∆¡
 		ILI9341_GramScan ( LCD_Mode );

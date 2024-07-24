@@ -1,9 +1,16 @@
+
+
+
+
+
+
 #ifndef      __BSP_ILI9341_LCD_H
 #define	     __BSP_ILI9341_LCD_H
 
 
 #include "stm32f1xx.h"
 #include "fonts.h"
+#include "graphic/color.h"
 
 typedef struct _tFont
 {    
@@ -109,7 +116,7 @@ sFONT 										*LCD_GetFont											(void);
 void 											LCD_ClearLine										(uint16_t Line);
 void 											LCD_SetBackColor								(uint16_t Color);
 void 											LCD_SetTextColor								(uint16_t Color)	;
-void 											LCD_SetColors										(uint16_t TextColor, uint16_t BackColor);
+//void LCD_SetColors (uint16_t TextColor, uint16_t BackColor);
 void 											LCD_GetColors										(uint16_t *TextColor, uint16_t *BackColor);
 
 /* 直接操作寄存器的方法控制IO */

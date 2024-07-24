@@ -1,6 +1,7 @@
 extern "C" {
 #include "bsp_ili9341_lcd.h"
 }
+
 sFONT Font8x16 = {
   _FONTDAT_ASCII8x16_Table, 
   8, /* Width */
@@ -1065,19 +1066,24 @@ sFONT *LCD_GetFont(void)
   return LCD_Currentfonts;
 }
 
-
+#include "lcd.h"
 /**
   * @brief  设置LCD的前景(字体)及背景颜色,RGB565
   * @param  TextColor: 指定前景(字体)颜色
   * @param  BackColor: 指定背景颜色
   * @retval None
   */
-void LCD_SetColors(uint16_t TextColor, uint16_t BackColor) 
+void LCD_SetColors(uni::Color::ColorIdentifier TColor, uni::Color::ColorIdentifier BColor)
 {
-  CurrentTextColor = TextColor; 
-  CurrentBackColor = BackColor;
+	uint16_t TextColor = uni::Color::From32(TColor).ToRGB565();
+	uint16_t BackColor = uni::Color::From32(BColor).ToRGB565();
+	CurrentTextColor = TextColor; 
+	CurrentBackColor = BackColor;
 }
-
+void LCD_SetColors_TODE(uint16_t TextColor, uint16_t BackColor) {
+	CurrentTextColor = TextColor; 
+	CurrentBackColor = BackColor;
+}
 /**
   * @brief  获取LCD的前景(字体)及背景颜色,RGB565
   * @param  TextColor: 用来存储前景(字体)颜色的指针变量
