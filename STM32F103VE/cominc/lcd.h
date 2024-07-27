@@ -4,6 +4,7 @@
 #include "MCU/ST/STM32F103VEx"
 #include "Device/Video"
 
+extern uint16_t CurrentTextColor;
 
 extern bool pressed;
 extern uni::Point CrtPoint;

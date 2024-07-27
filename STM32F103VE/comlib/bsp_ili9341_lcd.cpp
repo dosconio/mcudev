@@ -38,8 +38,8 @@ uint8_t LCD_SCAN_MODE = 6;
 uint16_t lcdid = LCDID_UNKNOWN;
 
 static sFONT *LCD_Currentfonts = &Font8x16;  //英文字体
-static uint16_t CurrentTextColor   = BLACK;//前景色
-static uint16_t CurrentBackColor   = WHITE;//背景色
+uint16_t CurrentTextColor   = BLACK;//前景色
+uint16_t CurrentBackColor   = WHITE;//背景色
 
 __inline void                 ILI9341_Write_Cmd           ( uint16_t usCmd );
 __inline void                 ILI9341_Write_Data          ( uint16_t usData );

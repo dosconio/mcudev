@@ -442,8 +442,8 @@ static uint8_t XPT2046_Calculate_CalibrationFactor ( strType_XPT2046_Coordinate 
   */
 static void ILI9341_DrawCross ( uint16_t usX, uint16_t usY )
 {
-	LCD.DrawLine(Point(usX-10,usY) , DisplaySize(20,0));
-	LCD.DrawLine(Point(usX,usY-10) , DisplaySize(0,20));
+	LCD.DrawLine(Point(usX-10,usY) , Size2(20,0), CurrentTextColor);
+	LCD.DrawLine(Point(usX,usY-10) , Size2(0,20), CurrentTextColor);
 }
 
 

@@ -315,7 +315,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>3</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -416,9 +416,19 @@
               <FilePath>..\..\..\..\..\SVGN\unisym\lib\cpp\Device\NVIC.cpp</FilePath>
             </File>
             <File>
-              <FileName>ILI9320.cpp</FileName>
+              <FileName>UART.cpp</FileName>
               <FileType>8</FileType>
-              <FilePath>..\..\..\..\..\SVGN\unisym\lib\cpp\Device\Video\ILI9320.cpp</FilePath>
+              <FilePath>..\..\..\..\..\SVGN\unisym\lib\cpp\Device\UART.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>STM32F4.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\..\SVGN\unisym\lib\cpp\MCU\STM32F4.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>interrupt_tab.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\..\..\..\..\SVGN\unisym\lib\cpp\Device\Interrupt\interrupt_tab.cpp</FilePath>
             </File>
           </Files>
         </Group>

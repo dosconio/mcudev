@@ -12,25 +12,13 @@ using namespace uni;
 class my_vci_t : public VideoControlInterface {
 	virtual void SetCursor(const Point& disp) {}
 	virtual Point GetCursor() { return Point(0,0); }
-	virtual void DrawPoint (const Point& disp, Color* color) {
-		if (color) LCD_SetTextColor(color->ToRGB565());
+	virtual void DrawPoint (const Point& disp, Color color) {
+		LCD_SetTextColor(color.ToRGB565());
 		ILI9341_SetPointPixel(disp.x, disp.y);
 	}
-	virtual void DrawRectangle (const DisplayRectangle& rect) {
-		if (rect.filled) {
-			ILI9341_OpenWindow (rect.x, rect.y, rect.width, rect.height);
-			ILI9341_FillColor(rect.width * rect.height, rect.color.ToRGB565());
-		}
-		else {
-			LCD.DrawLine(rect.getVertex(), 
-				DisplaySize(rect.width, 1));
-			LCD.DrawLine(Point(rect.x, rect.y + rect.height - 1), 
-				DisplaySize(rect.width, 1));
-			LCD.DrawLine(rect.getVertex(), 
-				DisplaySize(1, rect.height));
-			LCD.DrawLine(Point(rect.x + rect.width - 1, rect.y), 
-				DisplaySize(1, rect.height));		
-		}
+	virtual void DrawRectangle (const Rectangle& rect) {
+		ILI9341_OpenWindow (rect.x, rect.y, rect.width, rect.height);
+		ILI9341_FillColor(rect.width * rect.height, rect.color.ToRGB565());
 	}
 	virtual void DrawFont (const Point& disp, const DisplayFont& font) {
 		ILI9341_DispString_EN(disp.x, disp.y, (char*)font.addr);
