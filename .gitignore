@@ -8,8 +8,12 @@ _obj
 RTE
 他人资料
 *.scvd
-.jpg
-.png
+*.jpg
+*.png
+*.pdf
+*.zip
+*.html
+*PcbDoc*
 TODEL
 TODEL*
 0n-WaveViewer
@@ -17,4 +21,3 @@ Objects/
 Listings/
 RTE/
 SVGN
-*.pdf
