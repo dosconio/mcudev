@@ -396,11 +396,6 @@
           <GroupName>Library Unisym</GroupName>
           <Files>
             <File>
-              <FileName>LCD1602.cpp</FileName>
-              <FileType>8</FileType>
-              <FilePath>..\..\..\..\..\SVGN\unisym\lib\cpp\Device\Video\LCD1602.cpp</FilePath>
-            </File>
-            <File>
               <FileName>ustm32f4.lib</FileName>
               <FileType>4</FileType>
               <FilePath>..\..\..\..\..\SVGN\_bin\mcu\ustm32f4.lib</FilePath>
